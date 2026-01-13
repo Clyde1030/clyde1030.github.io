@@ -41,7 +41,7 @@ export const projects: Project[] = [
       "Large-scale data processing with PySpark and Databricks",
       "Time Series Analysis and derive time-based features",
       "Implement 4 ML models: Logistic Regression, Random Forest, XGBoost, and Multilayer Perceptron Neural Network",
-      "Data pipeline development with Delta Lake",
+      "Data pipeline development",
       "Data visualization with seaborn, matplotlib, and plotly"
     ],
     technologies: ["Databricks", "PySpark", "MLflow", "XGBoost", "Seaborn", "Matplotlib", "Plotly"],
