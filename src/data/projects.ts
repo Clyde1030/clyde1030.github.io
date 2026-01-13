@@ -7,6 +7,7 @@ export interface Project {
   longDescription: string;
   features: string[];
   technologies: string[];
+  mediumPost?: string;
 }
 
 export const projects: Project[] = [
@@ -31,17 +32,20 @@ export const projects: Project[] = [
     id: "data-viz-dashboard",
     title: "Flight Delay Analysis",
     description: "Predict departure delay with multiple ML models - XGBoost, Random Forest, Logistic Regression, and Multilayer Perceptron.",
-    tags: ["Databricks", "PySpark"],
+    tags: ["Databricks", "PySpark", "Big Data"],
     github: "https://github.com/Clyde1030/Flight-Delay-Prediction",
-    longDescription: "A big data analysis project using PySpark and Databricks to predict flight departure delays. The project handles 31M records with 200+ fields, implementing multiple machine learning models including XGBoost, Random Forest, Logistic Regression, and Multilayer Perceptron Neural Network.",
+    longDescription: "A big data analysis project using PySpark and Databricks to predict flight departure delays. The project handles 31M records with 200+ fields, implementing multiple machine learning models including XGBoost, Random Forest, Logistic Regression, and Multilayer Perceptron Neural Network. Leverages distributed computing and big data processing techniques with Delta Lake.",
     features: [
       "Handle large data with 31M records and 200+ fields",
       "Derive Graph-Based features using PageRank algorithm",
+      "Large-scale data processing with PySpark and Databricks",
       "Time Series Analysis and derive time-based features",
       "Implement 4 ML models: Logistic Regression, Random Forest, XGBoost, and Multilayer Perceptron Neural Network",
+      "Data pipeline development with Delta Lake",
       "Data visualization with seaborn, matplotlib, and plotly"
     ],
-    technologies: ["Databricks", "PySpark", "MLflow", "XGBoost", "Seaborn", "Matplotlib", "Plotly"]
+    technologies: ["Databricks", "PySpark", "MLflow", "XGBoost", "Delta Lake", "Seaborn", "Matplotlib", "Plotly"],
+    mediumPost: "https://medium.com/@yushenglee/predicting-flight-delay-at-scale-dd314cb34e77"
   },
   {
     id: "food-desert",
@@ -110,23 +114,6 @@ export const projects: Project[] = [
       "API for real-time sentiment analysis"
     ],
     technologies: ["Python", "PyTorch", "Transformers", "BERT", "FastAPI", "MongoDB"]
-  },
-  {
-    id: "flight-delay",
-    title: "Flight Delay Analysis",
-    description: "Big data analysis project using PySpark and Databricks to analyze flight delay patterns. Details coming soon.",
-    tags: ["PySpark", "Databricks", "Big Data"],
-    github: "https://github.com/yourusername/flight-delay",
-    longDescription: "A big data analytics project leveraging PySpark and Databricks to analyze large-scale flight delay data. This project demonstrates proficiency in distributed computing and big data processing techniques. More details coming soon.",
-    features: [
-      "Large-scale data processing with PySpark",
-      "Databricks cluster configuration and optimization",
-      "Flight delay pattern analysis",
-      "Predictive modeling for delays",
-      "Data pipeline development",
-      "Details coming soon"
-    ],
-    technologies: ["PySpark", "Databricks", "Python", "SQL", "Delta Lake", "MLlib"]
   },
   {
     id: "etl-pipeline",
