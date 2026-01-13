@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Github, FileText } from "lucide-react";
+import { ArrowLeft, Github, FileText, BookOpen } from "lucide-react";
 import { projects } from "@/data/projects";
 import {
   Carousel,
@@ -361,6 +361,18 @@ const ProjectDetail = () => {
                   <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                     <FileText className="w-4 h-4 mr-2" />
                     View Paper
+                  </Button>
+                </a>
+              )}
+              {project.mediumPost && (
+                <a 
+                  href={project.mediumPost} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    <BookOpen className="w-4 h-4 mr-2" />
+                    View on Medium
                   </Button>
                 </a>
               )}
