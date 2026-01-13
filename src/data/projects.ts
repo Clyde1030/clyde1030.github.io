@@ -44,7 +44,7 @@ export const projects: Project[] = [
       "Data pipeline development with Delta Lake",
       "Data visualization with seaborn, matplotlib, and plotly"
     ],
-    technologies: ["Databricks", "PySpark", "MLflow", "XGBoost", "Delta Lake", "Seaborn", "Matplotlib", "Plotly"],
+    technologies: ["Databricks", "PySpark", "MLflow", "XGBoost", "Seaborn", "Matplotlib", "Plotly"],
     mediumPost: "https://medium.com/@yushenglee/predicting-flight-delay-at-scale-dd314cb34e77"
   },
   {
