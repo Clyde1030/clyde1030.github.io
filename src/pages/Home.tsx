@@ -68,10 +68,7 @@ const Home = () => {
           </div>
 
           <div className="max-w-2xl mx-auto space-y-4">
-            <p className="text-lg text-foreground/90">
-              
-Yu-Sheng (Clyde) believes in using data to make better decisions and leveraging modern technology to boost productivity. His goal is to make technology and the underlying machine learning techniques more accessible and easier for people to understand and to apply in practice. He previously worked as a data analyst in the insurance industry. During his career break, he is pursuing a Master’s degree at the School of Information at UC Berkeley.
-            </p>
+            <p className="text-lg text-foreground/90">Stepping into data science domain as an insurance data analyst, I believe data can inform us to make better decisions. As I grew deeper interest in the tech field, I am exploring ways to leverage modern technology to boost productivity, including Machine learning, data engineering, and Large Language Models. My goal is to make technology and the underlying machine learning techniques more accessible and easier for people to understand and to apply in practice. That's why I am pursuing a Master’s degree at the School of Information at UC Berkeley to broaden my horizon and expand my skill sets in data science.</p>
           </div>
 
           {/* Skills & Expertise Section */}
