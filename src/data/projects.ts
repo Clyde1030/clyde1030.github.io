@@ -98,21 +98,4 @@ export const projects: Project[] = [
     ],
     technologies: ["R", "RStudio", "ggplot2", "dplyr", "tidyr", "Linear Regression"]
   },
-  {
-    id: "etl-pipeline",
-    title: "ETL Data Pipeline",
-    description: "Scalable ETL pipeline processing large datasets with Apache Spark and cloud infrastructure.",
-    tags: ["Spark", "AWS", "Python"],
-    github: "https://github.com/yourusername/project4",
-    longDescription: "A robust ETL pipeline designed to handle large-scale data processing in the cloud. The system efficiently extracts data from multiple sources, transforms it according to business rules, and loads it into data warehouses for analysis.",
-    features: [
-      "Distributed data processing with Apache Spark",
-      "Support for multiple data sources and formats",
-      "Data quality validation and cleansing",
-      "Incremental data loading",
-      "Error handling and recovery mechanisms",
-      "Scheduled job execution and monitoring"
-    ],
-    technologies: ["Apache Spark", "Python", "AWS S3", "AWS Glue", "PostgreSQL", "Airflow"]
-  }
 ];
