@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 import profileImage from "@/assets/profile2.png";
@@ -46,6 +46,15 @@ const Projects = () => {
               >
                 <Github className="w-4 h-4" />
                 <span className="text-sm">GitHub</span>
+              </a>
+              <a 
+                href="https://medium.com/@yushenglee" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span className="text-sm">Medium</span>
               </a>
             </div>
           </div>
