@@ -99,23 +99,6 @@ export const projects: Project[] = [
     technologies: ["R", "RStudio", "ggplot2", "dplyr", "tidyr", "Linear Regression"]
   },
   {
-    id: "nlp-sentiment",
-    title: "NLP Sentiment Analysis",
-    description: "Natural language processing project analyzing sentiment in social media data using transformer models.",
-    tags: ["Python", "PyTorch", "BERT"],
-    github: "https://github.com/yourusername/project3",
-    longDescription: "A sophisticated NLP system that analyzes sentiment in social media posts using state-of-the-art transformer models. The system can process large volumes of text data and provide detailed sentiment insights.",
-    features: [
-      "Multi-class sentiment classification",
-      "Entity recognition and extraction",
-      "Emotion detection beyond positive/negative",
-      "Batch processing for large datasets",
-      "Fine-tuned BERT models for accuracy",
-      "API for real-time sentiment analysis"
-    ],
-    technologies: ["Python", "PyTorch", "Transformers", "BERT", "FastAPI", "MongoDB"]
-  },
-  {
     id: "etl-pipeline",
     title: "ETL Data Pipeline",
     description: "Scalable ETL pipeline processing large datasets with Apache Spark and cloud infrastructure.",
