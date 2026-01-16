@@ -15,7 +15,7 @@ export const projects: Project[] = [
     id: "ml-pipeline",
     title: "Analyzing Congressional Stock Transactions with Graph Algorithms",
     description: "Use graph algorithms to detect potential congressional equity transaction anomaly and exploring the use case for document store and cache databases.",
-    tags: ["Neo4j", "PostgreSQL", "Graph Algorithms"],
+    tags: ["Neo4j", "PostgreSQL", "Python"],
     github: "https://github.com/yourusername/project1",
     longDescription: "A data engineering project that leverages graph algorithms to detect potential anomalies in congressional equity transactions. The project explores use cases for document store and cache databases, combining relational, graph, and NoSQL technologies for comprehensive data analysis.",
     features: [
@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "Graph traversal and community detection algorithms",
       "Data pipeline connecting PostgreSQL, Neo4j, MongoDB, and Redis"
     ],
-    technologies: ["Neo4j", "PostgreSQL", "Graph Algorithms", "MongoDB", "Redis"]
+    technologies: ["Python", "Pandas", "Neo4j", "PostgreSQL", "Graph Algorithms", "MongoDB", "Redis"]
   },
   {
     id: "data-viz-dashboard",
