@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { ChefHat, Github, Linkedin, Mail } from "lucide-react";
+import { ChefHat, Github, Linkedin, BookOpen, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import profileImage from "@/assets/profile2.png";
@@ -38,6 +38,9 @@ const About = () => {
                 </a>
                 <a href="https://www.linkedin.com/in/yushengclydelee/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Linkedin className="w-6 h-6" />
+                </a>
+                <a href="https://medium.com/@yushenglee" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <BookOpen className="w-6 h-6" />
                 </a>
                 <a href="mailto:yushenglee@berkeley.edu" className="text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="w-6 h-6" />
