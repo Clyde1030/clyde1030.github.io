@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "Analyzing Congressional Stock Transactions with Graph Algorithms",
     description: "Use graph algorithms to detect potential congressional equity transaction anomaly and exploring the use case for document store and cache databases.",
     tags: ["Neo4j", "PostgreSQL", "Python"],
-    github: "https://github.com/yourusername/project1",
+    github: "https://github.com/Clyde1030/Graph-Stock-Analysis",
     longDescription: "A data engineering project that leverages graph algorithms to detect potential anomalies in congressional equity transactions. The project explores use cases for document store and cache databases, combining relational, graph, and NoSQL technologies for comprehensive data analysis.",
     features: [
       "Graph-based anomaly detection for transaction patterns",
