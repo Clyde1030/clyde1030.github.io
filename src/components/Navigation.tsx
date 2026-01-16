@@ -9,8 +9,7 @@ const Navigation = () => {
   const isMobile = useIsMobile();
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "About", path: "/" },
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
