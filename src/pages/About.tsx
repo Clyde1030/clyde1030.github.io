@@ -1,29 +1,89 @@
 import { Card } from "@/components/ui/card";
-import { ChefHat } from "lucide-react";
-import aboutHeroImage from "@/assets/about-hero.jpg";
+import { ChefHat, Github, Linkedin, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import profileImage from "@/assets/profile2.png";
+
 const About = () => {
-  return <div className="min-h-screen">
-      {/* Hero Image Section */}
-      <section className="h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
-        
-        <div className="relative z-10 flex flex-col items-center gap-8 w-full">
-          <div className="relative w-full max-h-[70vh] overflow-hidden shadow-[0_0_60px_hsl(var(--primary)/0.3)]">
-            <img alt="About Me" src={aboutHeroImage} className="w-full h-full max-h-[70vh] border-0 opacity-85 object-cover object-center" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center px-8">
-                <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">About Me</h1>
-                
-              </div>
+  return (
+    <div className="min-h-screen pt-20">
+      {/* Hero Section - Profile Left, Introduction Right */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-[300px_1fr] gap-12 items-center">
+            {/* Profile Photo */}
+            <div className="flex justify-center md:justify-start">
+              <Avatar className="h-64 w-64 border-4 border-primary/20 shadow-glow">
+                <AvatarImage src={profileImage} alt="Profile" className="object-cover object-[center_20%]" />
+                <AvatarFallback>CL</AvatarFallback>
+              </Avatar>
+            </div>
+
+            {/* Self Introduction */}
+            <div className="space-y-4 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+                Hi, I'm Clyde
+              </h1>
+              <p className="text-xl text-primary font-medium">
+                A passionate data detective who loves building data pipelines, turning data to clear action by ML, and visualizations.
+              </p>
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                Stepping into data science domain as an insurance data analyst, I believe data can inform us to make better decisions. As I grew deeper interest in the tech field, I am exploring ways to leverage modern technology to boost productivity, including Machine learning, data engineering, and Large Language Models. My goal is to make technology and the underlying machine learning techniques more accessible and easier for people to understand and to apply in practice. That's why I am pursuing a Master's degree at the School of Information at UC Berkeley to broaden my horizon and expand my skill sets in data science.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="min-h-screen flex items-start justify-center px-4 py-16">
+      {/* Featured Projects Section */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl font-semibold text-center mb-12">Featured Projects</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Flight Delay Analysis */}
+            <Link to="/projects/data-viz-dashboard">
+              <Card className="p-6 bg-card border-border hover:border-primary transition-all hover:shadow-lg group h-full">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                    Flight Delay Analysis
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Predict departure delay with multiple ML models - XGBoost, Random Forest, Logistic Regression, and Multilayer Perceptron.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Databricks</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">PySpark</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Big Data</span>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+
+            {/* Congressional Stock Transactions */}
+            <Link to="/projects/ml-pipeline">
+              <Card className="p-6 bg-card border-border hover:border-primary transition-all hover:shadow-lg group h-full">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                    Analyzing Congressional Stock Transactions with Graph Algorithms
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Built an end-to-end ML pipeline for predictive analytics with automated model training and deployment.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Python</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Scikit-learn</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Docker</span>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* My Story Timeline Section */}
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-5xl space-y-16">
-          {/* My Story Timeline Section */}
           <div className="space-y-8">
             <h2 className="text-3xl font-semibold text-center mb-12">My Story</h2>
             
@@ -48,7 +108,7 @@ const About = () => {
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 md:order-1">
                 <h3 className="text-2xl font-semibold text-primary">UCSB and the Actuarial field</h3>
-                <p className="text-foreground/90 leading-relaxed">After graduating from UC Santa Barbara, I began my professional path as an actuarial student. I passed 3 actuarial exams while working at insurance companies located in Portland, Oregon, and St. Louis, MO. During this time, I became increasingly interested in the tools and technologies that powered our financial reporting processes. </p>
+                <p className="text-foreground/90 leading-relaxed">After graduating from UC Santa Barbara, I began my professional path as an actuarial student. I passed 3 actuarial exams while working at insurance companies located in Portland, Oregon, and St. Louis, MO. During this time, I became increasingly interested in the tools and technologies that powered our financial reporting processes. </p>
               </div>
               <div className="relative md:order-2">
                 <div className="absolute -left-4 top-1/2 w-8 h-8 bg-primary rounded-full border-4 border-background hidden md:block z-10" />
@@ -71,7 +131,7 @@ const About = () => {
               </div>
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-primary">Stepping into Data Field</h3>
-                <p className="text-foreground/90 leading-relaxed">Working in actuarial and financial reporting gave me a lot of exposure in data. While my initial focus was on actuarial modeling, I found myself fascinated by the behind-the-scenes systems that made everything run — from Python scripts and SQL queries to VBA macros automating Excel reports. My journey in data science began with a fascination for uncovering patterns in complex datasets. </p>
+                <p className="text-foreground/90 leading-relaxed">Working in actuarial and financial reporting gave me a lot of exposure in data. While my initial focus was on actuarial modeling, I found myself fascinated by the behind-the-scenes systems that made everything run — from Python scripts and SQL queries to VBA macros automating Excel reports. My journey in data science began with a fascination for uncovering patterns in complex datasets. </p>
               </div>
             </div>
 
@@ -115,7 +175,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Beyond Data Section - At Bottom */}
+          {/* Beyond Data Section */}
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-center mb-8">Beyond Data</h2>
             <Card className="p-8 bg-card border-border">
@@ -129,11 +189,10 @@ const About = () => {
                     <p className="text-foreground/90 leading-relaxed">
                       When I'm not analyzing data or training models, you'll find me in the kitchen experimenting with new recipes and flavors. I enjoy exploring international cuisines! From understanding the Maillard reaction to perfecting fermentation processes, cooking provides a delicious intersection of art and science that keeps me engaged outside of my professional work.  
                     </p>
-                    
                   </div>
                 </div>
                 
-                {/* Food Photo Grid - 3x2 on lg, 2x3 on md, 1x6 on sm */}
+                {/* Food Photo Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
                   <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                     <img alt="Dish 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="/lovable-uploads/8611e992-b978-44f8-aa44-1123eba4d38a.jpg" />
@@ -169,8 +228,23 @@ const About = () => {
               </div>
             </Card>
           </div>
+
+          {/* Social Links */}
+          <div className="flex gap-6 justify-center pt-8">
+            <a href="https://github.com/Clyde1030" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/in/yushengclydelee/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="mailto:yushenglee@berkeley.edu" className="text-muted-foreground hover:text-primary transition-colors">
+              <Mail className="w-6 h-6" />
+            </a>
+          </div>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default About;
