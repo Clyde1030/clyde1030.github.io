@@ -209,7 +209,7 @@ const About = () => {
                 </div>
                 
                 {/* Food Photo Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
                   <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                     <img alt="Dish 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="/lovable-uploads/8611e992-b978-44f8-aa44-1123eba4d38a.jpg" />
                   </div>
