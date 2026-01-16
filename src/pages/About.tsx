@@ -122,15 +122,15 @@ const About = () => {
 
             {/* Timeline Item 2 - Image Right */}
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4 md:order-1">
-                <h3 className="text-2xl font-semibold text-primary">UCSB and the Actuarial field</h3>
-                <p className="text-foreground/90 leading-relaxed">After graduating from UC Santa Barbara, I began my professional path as an actuarial student. I passed 3 actuarial exams while working at insurance companies located in Portland, Oregon, and St. Louis, MO. During this time, I became increasingly interested in the tools and technologies that powered our financial reporting processes. </p>
-              </div>
-              <div className="relative md:order-2">
+              <div className="relative order-1 md:order-2">
                 <div className="absolute -left-4 top-1/2 w-8 h-8 bg-primary rounded-full border-4 border-background hidden md:block z-10" />
                 <Card className="p-6 bg-card border-border overflow-hidden">
                   <img alt="Learning and development" className="w-full h-64 object-cover object-top rounded-lg" src="/lovable-uploads/5672ad74-496d-40d7-af05-19ab6d4ba63a.jpg" />
                 </Card>
+              </div>
+              <div className="space-y-4 order-2 md:order-1">
+                <h3 className="text-2xl font-semibold text-primary">UCSB and the Actuarial field</h3>
+                <p className="text-foreground/90 leading-relaxed">After graduating from UC Santa Barbara, I began my professional path as an actuarial student. I passed 3 actuarial exams while working at insurance companies located in Portland, Oregon, and St. Louis, MO. During this time, I became increasingly interested in the tools and technologies that powered our financial reporting processes. </p>
               </div>
             </div>
 
@@ -156,15 +156,15 @@ const About = () => {
 
             {/* Timeline Item 4 - Image Right */}
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4 md:order-1">
-                <h3 className="text-2xl font-semibold text-primary">Started my Journey with MIDS program</h3>
-                <p className="text-foreground/90 leading-relaxed">My curiosity about data quickly turned into a passion for leveraging it to solve real-world problems. Currently pursuing a MIDS degree at UC Berkeley, I focus on advanced statistical methods, machine learning algorithms, and modern data engineering practices. My coursework includes deep learning, natural language processing, and big data technologies. Through various projects in machine learning pipelines, data visualization dashboards, and NLP applications, I've developed expertise in transforming complex data into actionable insights that drive decision-making.</p>
-              </div>
-              <div className="relative md:order-2">
+              <div className="relative order-1 md:order-2">
                 <div className="absolute -left-4 top-1/2 w-8 h-8 bg-primary rounded-full border-4 border-background hidden md:block z-10" />
                 <Card className="p-6 bg-card border-border overflow-hidden">
                   <img alt="Internship experience" className="w-full h-64 object-cover rounded-lg" src="/lovable-uploads/6fc55fb9-6dbf-4bb7-9459-c0e6c9c27089.jpg" />
                 </Card>
+              </div>
+              <div className="space-y-4 order-2 md:order-1">
+                <h3 className="text-2xl font-semibold text-primary">Started my Journey with MIDS program</h3>
+                <p className="text-foreground/90 leading-relaxed">My curiosity about data quickly turned into a passion for leveraging it to solve real-world problems. Currently pursuing a MIDS degree at UC Berkeley, I focus on advanced statistical methods, machine learning algorithms, and modern data engineering practices. My coursework includes deep learning, natural language processing, and big data technologies. Through various projects in machine learning pipelines, data visualization dashboards, and NLP applications, I've developed expertise in transforming complex data into actionable insights that drive decision-making.</p>
               </div>
             </div>
 
