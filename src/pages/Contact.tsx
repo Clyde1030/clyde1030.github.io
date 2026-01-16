@@ -112,7 +112,7 @@ const Contact = () => {
                         <p className="font-mono text-sm">Download my CV/Resume</p>
                       </div>
                     </div>
-                    <a href="https://media.licdn.com/dms/document/media/v2/D562DAQFCv5z69CZWPg/profile-treasury-document-pdf-analyzed/B56ZvH_FcjHsAg-/0/1768586764578?e=1769644800&v=beta&t=8CL55CHb_AZJeV8Ci4zawVUyJx6KSgYulQIl8jMo7aU&acrobatPromotionSource=linkedin_chrome-post_view" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/1dJ9vY8gUYFMAnvYKdUisGCXERzycGj05/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                       <Button 
                         variant="outline"
                         className="border-primary text-primary hover:bg-primary/10"
