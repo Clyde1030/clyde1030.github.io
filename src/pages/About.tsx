@@ -19,7 +19,7 @@ const About = () => {
               </Avatar>
               
               {/* Social Links */}
-              <div className="flex gap-6 justify-center">
+              <div className="flex gap-6 justify-center w-64">
                 <a href="https://github.com/Clyde1030" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Github className="w-6 h-6" />
                 </a>
