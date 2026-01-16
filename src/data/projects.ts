@@ -14,19 +14,19 @@ export const projects: Project[] = [
   {
     id: "ml-pipeline",
     title: "Analyzing Congressional Stock Transactions with Graph Algorithms",
-    description: "Built an end-to-end ML pipeline for predictive analytics with automated model training and deployment.",
-    tags: ["Python", "Scikit-learn", "Docker"],
+    description: "Use graph algorithms to detect potential congressional equity transaction anomaly and exploring the use case for document store and cache databases.",
+    tags: ["Neo4j", "PostgreSQL", "Graph Algorithms"],
     github: "https://github.com/yourusername/project1",
-    longDescription: "A comprehensive machine learning pipeline that automates the entire process from data ingestion to model deployment. The system handles data preprocessing, feature engineering, model training, validation, and deployment with continuous monitoring.",
+    longDescription: "A data engineering project that leverages graph algorithms to detect potential anomalies in congressional equity transactions. The project explores use cases for document store and cache databases, combining relational, graph, and NoSQL technologies for comprehensive data analysis.",
     features: [
-      "Automated data preprocessing and cleaning",
-      "Feature engineering and selection",
-      "Multiple model training and comparison",
-      "Hyperparameter tuning with cross-validation",
-      "Model versioning and deployment",
-      "Real-time monitoring and alerting"
+      "Graph-based anomaly detection for transaction patterns",
+      "Integration of multiple database paradigms",
+      "Document store implementation with MongoDB",
+      "Cache layer optimization with Redis",
+      "Graph traversal and community detection algorithms",
+      "Data pipeline connecting PostgreSQL, Neo4j, MongoDB, and Redis"
     ],
-    technologies: ["Python", "Scikit-learn", "Pandas", "Docker", "MLflow", "FastAPI"]
+    technologies: ["Neo4j", "PostgreSQL", "Graph Algorithms", "MongoDB", "Redis"]
   },
   {
     id: "data-viz-dashboard",

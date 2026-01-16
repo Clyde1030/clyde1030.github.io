@@ -83,12 +83,12 @@ const About = () => {
                     Analyzing Congressional Stock Transactions with Graph Algorithms
                   </h3>
                   <p className="text-muted-foreground">
-                    Built an end-to-end ML pipeline for predictive analytics with automated model training and deployment.
+                    Use graph algorithms to detect potential congressional equity transaction anomaly and exploring the use case for document store and cache databases.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Python</span>
-                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Scikit-learn</span>
-                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Docker</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Neo4j</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">PostgreSQL</span>
+                    <span className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">MongoDB</span>
                   </div>
                 </div>
               </Card>
