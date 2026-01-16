@@ -12,27 +12,14 @@ const About = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-[300px_1fr] gap-12 items-center">
             {/* Profile Photo */}
-            <div className="flex justify-center md:justify-start">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <Avatar className="h-64 w-64 border-4 border-primary/20 shadow-glow">
                 <AvatarImage src={profileImage} alt="Profile" className="object-cover object-[center_20%]" />
                 <AvatarFallback>CL</AvatarFallback>
               </Avatar>
-            </div>
-
-            {/* Self Introduction */}
-            <div className="space-y-4 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-                Hi, I'm Clyde
-              </h1>
-              <p className="text-xl text-primary font-medium">
-                A passionate data detective who loves building data pipelines, turning data to clear action by ML, and visualizations.
-              </p>
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                Stepping into data science domain as an insurance data analyst, I believe data can inform us to make better decisions. As I grew deeper interest in the tech field, I am exploring ways to leverage modern technology to boost productivity, including Machine learning, data engineering, and Large Language Models. My goal is to make technology and the underlying machine learning techniques more accessible and easier for people to understand and to apply in practice. That's why I am pursuing a Master's degree at the School of Information at UC Berkeley to broaden my horizon and expand my skill sets in data science.
-              </p>
               
               {/* Social Links */}
-              <div className="flex gap-6 justify-center md:justify-start pt-4">
+              <div className="flex gap-6 justify-center">
                 <a href="https://github.com/Clyde1030" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Github className="w-6 h-6" />
                 </a>
@@ -46,6 +33,19 @@ const About = () => {
                   <Mail className="w-6 h-6" />
                 </a>
               </div>
+            </div>
+
+            {/* Self Introduction */}
+            <div className="space-y-4 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+                Hi, I'm Clyde
+              </h1>
+              <p className="text-xl text-primary font-medium">
+                A passionate data detective who loves building data pipelines, turning data to clear action by ML, and visualizations.
+              </p>
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                Stepping into data science domain as an insurance data analyst, I believe data can inform us to make better decisions. As I grew deeper interest in the tech field, I am exploring ways to leverage modern technology to boost productivity, including Machine learning, data engineering, and Large Language Models. My goal is to make technology and the underlying machine learning techniques more accessible and easier for people to understand and to apply in practice. That's why I am pursuing a Master's degree at the School of Information at UC Berkeley to broaden my horizon and expand my skill sets in data science.
+              </p>
             </div>
           </div>
         </div>
